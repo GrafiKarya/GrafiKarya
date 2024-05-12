@@ -28,7 +28,17 @@
                     word-spacing: 5px;
                 }
             }
-                
+            .row{
+                .card{
+                    a{
+                        text-decoration: none;
+                        p{
+                            color: $primary-color;
+                            @include heading-2;
+                        }
+                    }
+                }
+            }   
         }
         .footer{
             background-color: $secondary-color;

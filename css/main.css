@@ -26,6 +26,15 @@
   color: #022534;
   word-spacing: 5px;
 }
+.container-fluid .row .main .row .card a {
+  text-decoration: none;
+}
+.container-fluid .row .main .row .card a p {
+  color: #022534;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: bold;
+}
 .container-fluid .row .footer {
   background-color: #08546c;
 }
