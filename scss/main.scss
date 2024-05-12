@@ -1,0 +1,61 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid{
+    .row{
+        .nav{
+            background-color: $secondary-color;
+            ul{
+                display: flex;
+                justify-content: space-around;
+                li{
+                    flex-direction: row;
+                    list-style: none;
+                    a{
+                        @include text-3;
+                        text-decoration: none;
+                        color: $white-color
+                    }
+                }
+            }
+        }
+        .main{
+            .judul{
+                text-align: center;
+                h1{
+                    @include heading-1;
+                    color:$primary-color;
+                    word-spacing: 5px;
+                }
+            }
+                
+        }
+        .footer{
+            background-color: $secondary-color;
+            .row{
+                .col-md-2{
+                    @include text-4;
+                    p{
+                        padding-left: 4px;
+                        color: $white-color;
+                    }
+                }
+                .col-md-3{
+                    text-align: right;
+                    p{
+                        @include text-4;
+                        color: $white-color;
+                        line-height: 1px;
+                    }
+                    a{
+                        color: $white-color;
+                        text-decoration: none;
+                        i{
+                            font-size: large;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
