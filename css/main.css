@@ -12,9 +12,12 @@
 }
 .container-fluid .row .nav ul li a {
   font-family: "Libre Baskerville";
-  font-size: 16px;
+  font-size: 14px;
   text-decoration: none;
   color: #f9f4f4;
+}
+.container-fluid .row .nav .login {
+  justify-content: right;
 }
 .container-fluid .row .main .judul {
   text-align: center;
@@ -40,7 +43,7 @@
 }
 .container-fluid .row .footer .row .col-md-2 {
   font-family: "Libre Baskerville";
-  font-size: 12px;
+  font-size: 14px;
 }
 .container-fluid .row .footer .row .col-md-2 p {
   padding-left: 4px;
@@ -51,7 +54,7 @@
 }
 .container-fluid .row .footer .row .col-md-3 p {
   font-family: "Libre Baskerville";
-  font-size: 12px;
+  font-size: 14px;
   color: #f9f4f4;
   line-height: 1px;
 }

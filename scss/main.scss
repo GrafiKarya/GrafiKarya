@@ -12,11 +12,14 @@
                     flex-direction: row;
                     list-style: none;
                     a{
-                        @include text-3;
+                        @include text-4;
                         text-decoration: none;
                         color: $white-color
                     }
                 }
+            }
+            .login{
+                justify-content: right;
             }
         }
         .main{
