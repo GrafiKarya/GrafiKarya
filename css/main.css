@@ -2,15 +2,15 @@
 .container-fluid .row .nav {
   background-color: #08546c;
 }
-.container-fluid .row .nav ul {
+.container-fluid .row .nav .navbar ul {
   display: flex;
   justify-content: space-around;
 }
-.container-fluid .row .nav ul li {
+.container-fluid .row .nav .navbar ul li {
   flex-direction: row;
   list-style: none;
 }
-.container-fluid .row .nav ul li a {
+.container-fluid .row .nav .navbar ul li a {
   font-family: "Libre Baskerville";
   font-size: 14px;
   text-decoration: none;
@@ -18,6 +18,7 @@
 }
 .container-fluid .row .nav .login {
   justify-content: right;
+  align-items: end;
 }
 .container-fluid .row .main .judul {
   text-align: center;

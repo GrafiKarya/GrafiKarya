@@ -1,69 +1,88 @@
 @import "modules/warna";
 @import "modules/tipografi";
 
-.container-fluid{
-    .row{
-        .nav{
+.container-fluid {
+    .row {
+        .nav {
             background-color: $secondary-color;
-            ul{
-                display: flex;
-                justify-content: space-around;
-                li{
-                    flex-direction: row;
-                    list-style: none;
-                    a{
-                        @include text-4;
-                        text-decoration: none;
-                        color: $white-color
+
+            .navbar {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        flex-direction: row;
+                        list-style: none;
+
+                        a {
+                            @include text-4;
+                            text-decoration: none;
+                            color: $white-color
+                        }
                     }
                 }
+
             }
-            .login{
+
+            .login {
                 justify-content: right;
+                align-items: end;
             }
         }
-        .main{
-            .judul{
+
+        .main {
+            .judul {
                 text-align: center;
-                h1{
+
+                h1 {
                     @include heading-1;
-                    color:$primary-color;
+                    color: $primary-color;
                     word-spacing: 5px;
                 }
             }
-            .row{
-                .card{
-                    a{
+
+            .row {
+                .card {
+                    a {
                         text-decoration: none;
-                        p{
+
+                        p {
                             color: $primary-color;
                             @include heading-2;
                         }
                     }
                 }
-            }   
+            }
         }
-        .footer{
+
+        .footer {
             background-color: $secondary-color;
-            .row{
-                .col-md-2{
+
+            .row {
+                .col-md-2 {
                     @include text-4;
-                    p{
+
+                    p {
                         padding-left: 4px;
                         color: $white-color;
                     }
                 }
-                .col-md-3{
+
+                .col-md-3 {
                     text-align: right;
-                    p{
+
+                    p {
                         @include text-4;
                         color: $white-color;
                         line-height: 1px;
                     }
-                    a{
+
+                    a {
                         color: $white-color;
                         text-decoration: none;
-                        i{
+
+                        i {
                             font-size: large;
                         }
                     }
