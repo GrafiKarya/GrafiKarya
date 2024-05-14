@@ -6,6 +6,6 @@ class GrafikKarya extends Controller
 {
     //
     public function index() {
-        return view('daftarKarya');
+        return view ('daftarKarya');
     }
 }
