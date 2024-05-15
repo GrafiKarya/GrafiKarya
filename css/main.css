@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
 .container-fluid .row .nav {
-  background-color: #08546c;
+  background-color: #2b2d42;
 }
 .container-fluid .row .nav .navbar ul {
   display: flex;
@@ -23,12 +23,12 @@
   width: 90px;
   height: 28px;
   color: #f9f4f4;
-  border: solid #f9f4f4 1px;
+  border: none;
   border-radius: 5px;
-  background-color: transparent;
-  box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-  -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-  -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #D90429;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
 }
 .container-fluid .row .nav .login {
   justify-content: right;
@@ -41,11 +41,12 @@
   font-family: "Libre Baskerville";
   font-size: 32px;
   font-weight: bold;
-  color: #022534;
+  color: #D90429;
   word-spacing: 5px;
 }
 .container-fluid .row .main .row .card a {
   text-decoration: none;
+  text-align: center;
 }
 .container-fluid .row .main .row .card a p {
   color: #022534;
@@ -54,29 +55,47 @@
   font-weight: bold;
 }
 .container-fluid .row .footer {
-  background-color: #08546c;
+  background-color: #2b2d42;
 }
-.container-fluid .row .footer .row .col-md-2 {
+.container-fluid .row .footer .row .kiri {
   font-family: "Libre Baskerville";
   font-size: 14px;
 }
-.container-fluid .row .footer .row .col-md-2 p {
-  padding-left: 4px;
+.container-fluid .row .footer .row .kiri p {
+  padding-left: 5px;
+  padding-right: 130px;
   color: #f9f4f4;
 }
-.container-fluid .row .footer .row .col-md-3 {
+.container-fluid .row .footer .row .tengah {
+  align-items: center;
+  text-align: center;
+  color: #f9f4f4;
+}
+.container-fluid .row .footer .row .tengah label {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: bold;
+}
+.container-fluid .row .footer .row .tengah input {
+  margin-top: 10px;
+  width: 400px;
+  height: 40px;
+  background-color: transparent;
+  border: solid 1px #f9f4f4;
+}
+.container-fluid .row .footer .row .kanan {
   text-align: right;
 }
-.container-fluid .row .footer .row .col-md-3 p {
+.container-fluid .row .footer .row .kanan p {
   font-family: "Libre Baskerville";
   font-size: 14px;
   color: #f9f4f4;
   line-height: 1px;
 }
-.container-fluid .row .footer .row .col-md-3 a {
+.container-fluid .row .footer .row .kanan a {
   color: #f9f4f4;
   text-decoration: none;
 }
-.container-fluid .row .footer .row .col-md-3 a i {
-  font-size: large;
+.container-fluid .row .footer .row .kanan a i {
+  font-size: 1.5rem;
 }/*# sourceMappingURL=main.css.map */

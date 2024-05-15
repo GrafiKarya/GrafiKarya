@@ -4,7 +4,7 @@
 .container-fluid {
     .row {
         .nav {
-            background-color: $secondary-color;
+            background-color: $blueColor;
 
             .navbar {
                 ul {
@@ -18,7 +18,7 @@
                         a {
                             @include text-3;
                             text-decoration: none;
-                            color: $white-color
+                            color: $whiteColor2;
                         }
                     }
                 }
@@ -32,13 +32,13 @@
                         margin-top: 8px;
                         width: 90px;
                         height: 28px;
-                        color: $white-color;
-                        border: solid $white-color 1px;
+                        color: $whiteColor2;
+                        border: none;
                         border-radius: 5px;
-                        background-color: transparent;
-                        box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-                        -webkit-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
-                        -moz-box-shadow: 0px 5px 4px 0px rgba(0, 0, 0, 0.25);
+                        background-color: $redColor1;
+                        box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
                     }
                 }
             }
@@ -55,7 +55,7 @@
 
                 h1 {
                     @include heading-1;
-                    color: $primary-color;
+                    color: $redColor1;
                     word-spacing: 5px;
                 }
             }
@@ -64,9 +64,9 @@
                 .card {
                     a {
                         text-decoration: none;
-
+                        text-align: center;
                         p {
-                            color: $primary-color;
+                            color: $darkColor2;
                             @include heading-2;
                         }
                     }
@@ -75,33 +75,50 @@
         }
 
         .footer {
-            background-color: $secondary-color;
+            background-color: $blueColor;
 
             .row {
-                .col-md-2 {
+                .kiri {
                     @include text-4;
 
                     p {
-                        padding-left: 4px;
-                        color: $white-color;
+                        padding-left: 5px;
+                        padding-right: 130px;
+                        color: $whiteColor2;
                     }
                 }
 
-                .col-md-3 {
+                .tengah{
+                    align-items: center;
+                    text-align: center;
+                    color: $whiteColor2;
+                    label{
+                        @include heading-2;
+                    }
+                    input{
+                        margin-top: 10px;
+                        width: 400px;
+                        height: 40px;
+                        background-color: transparent;
+                        border: solid 1px $whiteColor2;
+                    }
+                }
+
+                .kanan{
                     text-align: right;
 
                     p {
                         @include text-4;
-                        color: $white-color;
+                        color: $whiteColor2;
                         line-height: 1px;
                     }
 
                     a {
-                        color: $white-color;
+                        color: $whiteColor2;
                         text-decoration: none;
 
                         i {
-                            font-size: large;
+                            font-size: 1.5rem;
                         }
                     }
                 }
