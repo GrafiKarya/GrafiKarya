@@ -14,6 +14,7 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
         crossorigin="anonymous"></script>
     <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    
 </head>
 
 <body>
@@ -40,8 +41,12 @@
                 <hr style="height: 1px;">
             </div>
             <div class="unggah">
-                <form action="" method="post" class="row column-gap-2 ms-1">
-                    <div class="uploadGambar col-sm-5">ikan</div>
+                <form action="" method="post" class="row column-gap-2 ms-4">
+                    <div class="uploadGambar col-sm-5" id="uploadGambar">
+                        <i class="fa-regular fa-circle-up"></i>
+                        <br>
+                        Drag and drop an image here
+                    </div>
                     <div class="inputan col-sm-6">
                         <label for="JudulKarya" class="form-label">Judul Karya</label>
                         <input type="text" class="form-control mb-2 border-1 border-black " id="JudulKarya">
@@ -54,6 +59,7 @@
             <!-- Main End -->
         </div>
     </div>
+    <script type="text/javascript" src="upload.js"></script>
 </body>
 
 </html>

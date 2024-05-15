@@ -59,15 +59,21 @@
             
             form{
                 .uploadGambar{
+                    @include text-4;
+                    text-align: center;
+                    padding-top: 10rem;
                     border-radius: 10px;
-                    background-color: aqua;
+                    background-color: $whiteColor3;
+                    i{
+                        font-size: 3rem;
+                        color: $blueColor;
+                    }
                 }
                 .inputan{
                     @include text-2;
                     height: 25rem;
                     padding-top: 5rem;
                     color: $blueColor;
-                    background-color: bisque;
                     button{
                         @include text-4;
                         border-radius: 5px;

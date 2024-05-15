@@ -44,8 +44,16 @@
   color: #D90429;
 }
 .container-fluid .row .unggah form .uploadGambar {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  text-align: center;
+  padding-top: 10rem;
   border-radius: 10px;
-  background-color: aqua;
+  background-color: #edf2f4;
+}
+.container-fluid .row .unggah form .uploadGambar i {
+  font-size: 3rem;
+  color: #2b2d42;
 }
 .container-fluid .row .unggah form .inputan {
   font-family: "Libre Baskerville";
@@ -53,7 +61,6 @@
   height: 25rem;
   padding-top: 5rem;
   color: #2b2d42;
-  background-color: bisque;
 }
 .container-fluid .row .unggah form .inputan button {
   font-family: "Libre Baskerville";
