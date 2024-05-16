@@ -1,0 +1,45 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+body {
+  background-color: #2b2d42;
+}
+
+.container-fluid .row .kontainer {
+  background-color: #f9f4f4;
+  color: #2b2d42;
+  height: -moz-fit-content;
+  height: fit-content;
+  border-radius: 10px;
+}
+.container-fluid .row .kontainer img {
+  width: 180px;
+  height: auto;
+  margin-left: 27%;
+}
+.container-fluid .row .kontainer h2 {
+  font-family: "Libre Baskerville";
+  font-size: 23px;
+  font-weight: bold;
+  text-align: center;
+}
+.container-fluid .row .kontainer form input {
+  height: 50px;
+  border-radius: 15px;
+}
+.container-fluid .row .kontainer form button {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  width: 380px;
+  height: 50px;
+  border: none;
+  border-radius: 15px;
+  background-color: #D90429;
+  color: #f9f4f4;
+}
+.container-fluid .row .kontainer p {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  text-align: center;
+}
+.container-fluid .row .kontainer p a {
+  text-decoration: none;
+}/*# sourceMappingURL=login.css.map */

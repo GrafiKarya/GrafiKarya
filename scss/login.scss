@@ -1,0 +1,49 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+body {
+    background-color: #2b2d42;
+}
+
+.container-fluid {
+    .row {
+        .kontainer {
+            background-color: $whiteColor2;
+            color: $blueColor;
+            height: fit-content;
+            border-radius: 10px;
+            img {
+                width: 180px;
+                height: auto;
+                margin-left: 27%;
+            }
+
+            h2 {
+                @include heading-3;
+                text-align: center;
+            }
+            form{
+                input{
+                    height: 50px;
+                    border-radius: 15px;
+                }
+                button{
+                    @include text-3;
+                    width: 380px;
+                    height: 50px;
+                    border:none;
+                    border-radius: 15px;
+                    background-color: $redColor1;
+                    color: $whiteColor2;
+                }
+            }
+            p{
+                @include text-4;
+                text-align: center;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

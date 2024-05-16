@@ -10,6 +10,11 @@
     font-size: 18px;
     font-weight: bold;
 }
+@mixin heading-3{
+    font-family: "Libre Baskerville";
+    font-size: 23px;
+    font-weight: bold;
+}
 
 @mixin text-1{
     font-family: "Libre Baskerville";
