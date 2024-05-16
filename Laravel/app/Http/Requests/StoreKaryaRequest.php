@@ -11,7 +11,7 @@ class StoreKaryaRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,6 +23,9 @@ class StoreKaryaRequest extends FormRequest
     {
         return [
             //
+            'gambar' => 'required',
+            'judul' => 'required',
+            'keterangan' => 'required',
         ];
     }
 }

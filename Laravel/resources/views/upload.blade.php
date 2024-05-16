@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GrafiKarya</title>
-    <link rel="stylesheet" href="css/upload.css">
+    <link rel="stylesheet" href="{{ asset('css/upload.css') }}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
@@ -41,17 +41,19 @@
                 <hr style="height: 1px;">
             </div>
             <div class="unggah">
-                <form action="" method="post" class="row column-gap-2 ms-4">
+            <form action="{{ route('karya.store') }}" method="post" class="row column-gap-2 ms-4" enctype="multipart/form-data">
+                @csrf
                     <div class="uploadGambar col-sm-5" id="uploadGambar">
                         <i class="fa-regular fa-circle-up"></i>
                         <br>
                         Drag and drop an image here
                     </div>
                     <div class="inputan col-sm-6">
+                        <input type="file" name="gambar">
                         <label for="JudulKarya" class="form-label">Judul Karya</label>
-                        <input type="text" class="form-control mb-2 border-1 border-black " id="JudulKarya">
+                        <input type="text" class="form-control mb-2 border-1 border-black " id="JudulKarya" name="judul">
                         <label for="Keterangan" class="form-label">Keterangan</label>
-                        <input type="text" class="form-control mb-4 border-1 border-black" id="Keterangan">
+                        <input type="text" class="form-control mb-4 border-1 border-black" id="Keterangan" name="keterangan">
                         <button type="submit" class="border-0">Unggah</button>
                     </div>
                 </form>
@@ -59,7 +61,7 @@
             <!-- Main End -->
         </div>
     </div>
-    <script type="text/javascript" src="upload.js"></script>
+    <script type="text/javascript" src="{{ asset('js/upload.js') }}"></script>
 </body>
 
 </html>

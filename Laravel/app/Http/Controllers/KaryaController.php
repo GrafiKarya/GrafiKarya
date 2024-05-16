@@ -5,6 +5,8 @@ namespace App\Http\Controllers;
 use App\Models\Karya;
 use App\Http\Requests\StoreKaryaRequest;
 use App\Http\Requests\UpdateKaryaRequest;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Storage;
 
 class KaryaController extends Controller
 {
@@ -14,6 +16,8 @@ class KaryaController extends Controller
     public function index()
     {
         //
+        $karya = Karya::all();
+        return view('daftarKarya', compact('karya'));
     }
 
     /**
@@ -22,6 +26,7 @@ class KaryaController extends Controller
     public function create()
     {
         //
+        return view('upload');
     }
 
     /**
@@ -30,6 +35,17 @@ class KaryaController extends Controller
     public function store(StoreKaryaRequest $request)
     {
         //
+        
+        $data = $request->validated();
+
+        if ($request->file('gambar')) {
+            $data['gambar'] = $request->file('gambar')->store('public/gambar-karya');
+        }
+
+        // dd($data['gambar']);
+        Karya::create($data);
+
+        return redirect()->route('karya.index');
     }
 
     /**
@@ -38,6 +54,7 @@ class KaryaController extends Controller
     public function show(Karya $karya)
     {
         //
+        return view('show', compact('karya'));
     }
 
     /**
@@ -46,6 +63,7 @@ class KaryaController extends Controller
     public function edit(Karya $karya)
     {
         //
+        return view('edit', compact('karya'));
     }
 
     /**
@@ -54,6 +72,21 @@ class KaryaController extends Controller
     public function update(UpdateKaryaRequest $request, Karya $karya)
     {
         //
+        $data = $request->validated();
+
+        if ($request->file('gambar')) {
+            if ($request->oldgambar) {
+                Storage::delete($request->oldgambar);
+            }
+            $data['gambar'] = $request->file('gambar')->store('public/gambar-karya');
+        }
+
+        if ($karya->update($data)) {
+            // Alert::success('Berhasil', 'Data karya Berhasil Diubah');
+            return redirect(route('karya.index'));
+        } else {
+            // Alert::error('Gagal', 'Data karya Gagal Diubah');
+        }
     }
 
     /**
@@ -62,5 +95,10 @@ class KaryaController extends Controller
     public function destroy(Karya $karya)
     {
         //
+        if ($karya->gambar) {
+            Storage::delete($karya->gambar);
+        }
+        $karya->delete();
+        return redirect(route('karya.index'));
     }
 }

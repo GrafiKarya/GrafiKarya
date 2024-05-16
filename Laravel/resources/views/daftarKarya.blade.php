@@ -38,38 +38,16 @@
                 </div>
                 <!--  -->
                 <div class="row column-gap-3 mx-3">
+                    @foreach ($karya as $item)
                     <div class="card mb-3 col-md-3" style="max-width: 18rem;">
-                        <a href="">
-                            <img src="assets/tegah.jpg" class="card-img-top" alt="Karya">
+                        <a href="{{ route('karya.show', ['karya' => $item->id]) }}">
+                            <img src="{{ asset(str_replace('public', 'storage', $item->gambar)) }}" class="card-img-top" alt="Karya">
                             <div class="card-body">
-                                <p>Judul Karya</p>
+                                <p>{{ $item->judul }}</p>
                             </div>
                         </a>
-                    </div>
-                    <div class="card mb-3 col-md-3" style=" max-width: 18rem;">
-                        <a href="">
-                            <img src="assets/tegah.jpg" class="card-img-top" alt="Karya">
-                            <div class="card-body">
-                                <p>Judul Karya</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mb-3 col-md-3" style="max-width: 18rem;">
-                        <a href="">
-                            <img src="assets/tegah.jpg" class="card-img-top" alt="Karya">
-                            <div class="card-body">
-                                <p>Judul Karya</p>
-                            </div>
-                        </a>
-                    </div>
-                    <div class="card mb-3 col-md-3" style="max-width: 18rem;">
-                        <a href="">
-                            <img src="assets/tegah.jpg" class="card-img-top" alt="Karya">
-                            <div class="card-body">
-                                <p>Judul Karya</p>
-                            </div>
-                        </a>
-                    </div>
+                    </div>    
+                    @endforeach
                 </div>
                 <!--  -->
             </div>
