@@ -11,7 +11,7 @@ class UpdateKaryaRequest extends FormRequest
      */
     public function authorize(): bool
     {
-        return false;
+        return true;
     }
 
     /**
@@ -23,6 +23,9 @@ class UpdateKaryaRequest extends FormRequest
     {
         return [
             //
+            // 'gambar' => 'required',
+            'judul' => 'required',
+            'keterangan' => 'required',
         ];
     }
 }

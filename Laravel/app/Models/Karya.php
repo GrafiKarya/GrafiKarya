@@ -10,4 +10,10 @@ class Karya extends Model
     use HasFactory;
 
     protected $table = 'tb_karya';
+
+    protected $fillable = [
+        'judul',
+        'keterangan',
+        'gambar',
+    ];
 }
