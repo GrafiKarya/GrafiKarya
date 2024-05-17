@@ -46,10 +46,10 @@
                     <div class="uploadGambar col-sm-5" id="uploadGambar">
                         <i class="fa-regular fa-circle-up"></i>
                         <br>
-                        Drag and drop an image here
+                        <input type="file" name="gambar" accept="image/*">
                     </div>
                     <div class="inputan col-sm-6">
-                        <input type="file" name="gambar">
+                        
                         <label for="JudulKarya" class="form-label">Judul Karya</label>
                         <input type="text" class="form-control mb-2 border-1 border-black " id="JudulKarya" name="judul">
                         <label for="Keterangan" class="form-label">Keterangan</label>
@@ -61,7 +61,7 @@
             <!-- Main End -->
         </div>
     </div>
-    <script type="text/javascript" src="{{ asset('js/upload.js') }}"></script>
+    {{-- <script type="text/javascript" src="{{ asset('js/upload.js') }}"></script> --}}
 </body>
 
 </html>
