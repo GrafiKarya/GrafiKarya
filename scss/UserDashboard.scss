@@ -1,0 +1,32 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid {
+    .row {
+        .nav {
+            background-color: $blueColor;
+
+            .navbar {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        flex-direction: row;
+                        list-style: none;
+
+                        a {
+                            @include text-3;
+                            text-decoration: none;
+                            color: $whiteColor2;
+                        }
+                    }
+                }
+            }
+
+            #myCarousel{
+                background-color: $blueColor;
+            }
+        }
+    }
+}
