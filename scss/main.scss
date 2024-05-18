@@ -73,54 +73,50 @@
                 }
             }
         }
+    }
+}
+#footer {
+    background-color: $blueColor;
 
-        .footer {
-            background-color: $blueColor;
+    .row {
+        .kiri {
+            @include text-4;
 
-            .row {
-                .kiri {
-                    @include text-4;
+            p {
+                padding-left: 5px;
+                color: $whiteColor2;
+            }
+        }
 
-                    p {
-                        padding-left: 5px;
-                        padding-right: 130px;
-                        color: $whiteColor2;
-                    }
-                }
+        .tengah{
+            color: $whiteColor2;
+            text-align: center;
+            label{
+                @include heading-2;
+            }
+            input{
+                margin-top: 10px;
+                width: max-content;
+                background-color: transparent;
+                border: solid 1px $whiteColor2;
+            }
+        }
 
-                .tengah{
-                    align-items: center;
-                    text-align: center;
-                    color: $whiteColor2;
-                    label{
-                        @include heading-2;
-                    }
-                    input{
-                        margin-top: 10px;
-                        width: 400px;
-                        height: 40px;
-                        background-color: transparent;
-                        border: solid 1px $whiteColor2;
-                    }
-                }
+        .kanan{
+            text-align: right;
 
-                .kanan{
-                    text-align: right;
+            p {
+                @include text-4;
+                color: $whiteColor2;
+                line-height: 1px;
+            }
 
-                    p {
-                        @include text-4;
-                        color: $whiteColor2;
-                        line-height: 1px;
-                    }
+            a {
+                color: $whiteColor2;
+                text-decoration: none;
 
-                    a {
-                        color: $whiteColor2;
-                        text-decoration: none;
-
-                        i {
-                            font-size: 1.5rem;
-                        }
-                    }
+                i {
+                    font-size: 1.5em;
                 }
             }
         }
