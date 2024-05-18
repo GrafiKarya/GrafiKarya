@@ -1,0 +1,86 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.container-fluid .row .nav {
+  background-color: #2b2d42;
+}
+.container-fluid .row .nav .navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.container-fluid .row .nav .navbar ul li {
+  flex-direction: row;
+  list-style: none;
+}
+.container-fluid .row .nav .navbar ul li a {
+  font-family: "Libre Baskerville";
+  font-size: 16px;
+  text-decoration: none;
+  color: #f9f4f4;
+}
+.container-fluid .row .nav .login form .tombolLogin {
+  font-family: "Libre Baskerville";
+  font-size: 12px;
+  margin-top: 8px;
+  width: 90px;
+  height: 28px;
+  color: #f9f4f4;
+  border: none;
+  border-radius: 5px;
+  background-color: #D90429;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+}
+.container-fluid .row .nav .login {
+  justify-content: right;
+  align-items: end;
+}
+.container-fluid .row .judul {
+  text-align: center;
+}
+.container-fluid .row .judul h1 {
+  font-family: "Libre Baskerville";
+  font-size: 30px;
+  font-weight: bold;
+  color: #D90429;
+}
+.container-fluid .row .unggah form .uploadGambar {
+  font-family: "Libre Baskerville";
+  font-size: 12px;
+  background-color: #edf2f4;
+  display: grid;
+  place-content: center;
+  text-align: center;
+}
+.container-fluid .row .unggah form .uploadGambar input[type=file] {
+  display: none;
+}
+.container-fluid .row .unggah form .uploadGambar label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #f9f4f4;
+  background-color: #D90429;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.container-fluid .row .unggah form .uploadGambar label:active {
+  transform: scale(0.9);
+}
+.container-fluid .row .unggah form .inputan {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  height: 25rem;
+  padding-top: 5rem;
+  color: #2b2d42;
+}
+.container-fluid .row .unggah form .inputan button {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  border-radius: 5px;
+  width: 85px;
+  height: 40px;
+  background-color: #D90429;
+  color: #ffffff;
+}/*# sourceMappingURL=upload.css.map */

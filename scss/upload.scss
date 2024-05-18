@@ -1,0 +1,101 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid {
+    .row {
+        .nav {
+            background-color: $blueColor;
+
+            .navbar {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        flex-direction: row;
+                        list-style: none;
+
+                        a {
+                            @include text-3;
+                            text-decoration: none;
+                            color: $whiteColor2;
+                        }
+                    }
+                }
+
+            }
+
+            .login {
+                form {
+                    .tombolLogin {
+                        @include text-5;
+                        margin-top: 8px;
+                        width: 90px;
+                        height: 28px;
+                        color: $whiteColor2;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: $redColor1;
+                        box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                    }
+                }
+            }
+
+            .login {
+                justify-content: right;
+                align-items: end;
+            }
+        }
+        .judul{
+            text-align: center;
+            h1{
+                @include heading-1;
+                color: $redColor1;
+            }
+        }
+        .unggah{
+            
+            form{
+                .uploadGambar{
+                    @include text-5;
+                    background-color: $whiteColor3;
+                    display: grid;
+                    place-content: center;
+                    text-align: center;
+                    input[type="file"]{
+                        display: none;
+                        
+                    }
+                    label{
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: $whiteColor2;
+                        background-color: $redColor1;
+                        text-align: center;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                    label:active{
+                        transform: scale(0.9);
+                    }
+                }
+                .inputan{
+                    @include text-2;
+                    height: 25rem;
+                    padding-top: 5rem;
+                    color: $blueColor;
+                    button{
+                        @include text-4;
+                        border-radius: 5px;
+                        width: 85px;
+                        height: 40px;
+                        background-color: $redColor1;
+                        color: $whiteColor1;
+                    }
+                }
+            }
+        }
+    }
+}
