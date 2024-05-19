@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.container-fluid .row .nav {
+  background-color: #2b2d42;
+}
+.container-fluid .row .nav .navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.container-fluid .row .nav .navbar ul li {
+  flex-direction: row;
+  list-style: none;
+}
+.container-fluid .row .nav .navbar ul li a {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  text-decoration: none;
+  color: #f9f4f4;
+}
+
+.tombol button {
+  background-color: #D90429;
+  height: 3rem;
+  width: 3rem;
+}
+.tombol button i {
+  color: #f9f4f4;
+  font-size: 2rem;
+}
+
+.detailnya {
+  background-color: #edf2f4;
+}
+.detailnya .deskripsi p {
+  color: #848484;
+}
+
+#karyaLainnya {
+  font-family: "Libre Baskerville";
+  font-size: 36px;
+  font-weight: bold;
+  color: #D90429;
+  text-align: center;
+}
+
+.karyaLainnya .row .card a {
+  text-decoration: none;
+  text-align: center;
+}
+.karyaLainnya .row .card a p {
+  color: #022534;
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: bold;
+}
+
+#footer {
+  background-color: #2b2d42;
+}
+#footer .row .kiri {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+}
+#footer .row .kiri p {
+  padding-left: 5px;
+  color: #f9f4f4;
+}
+#footer .row .tengah {
+  color: #f9f4f4;
+  text-align: center;
+}
+#footer .row .tengah label {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  font-weight: bold;
+}
+#footer .row .tengah input {
+  margin-top: 10px;
+  width: -moz-max-content;
+  width: max-content;
+  background-color: transparent;
+  border: solid 1px #f9f4f4;
+}
+#footer .row .kanan {
+  text-align: right;
+}
+#footer .row .kanan p {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  color: #f9f4f4;
+  line-height: 1px;
+}
+#footer .row .kanan a {
+  color: #f9f4f4;
+  text-decoration: none;
+}
+#footer .row .kanan a i {
+  font-size: 1.5em;
+}/*# sourceMappingURL=detailKarya.css.map */
