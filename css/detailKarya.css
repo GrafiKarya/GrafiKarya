@@ -30,6 +30,20 @@
 .detailnya {
   background-color: #edf2f4;
 }
+.detailnya .gambar {
+  position: relative; /* set container to a relative position */
+}
+.detailnya .gambar button {
+  position: absolute; /* set button to an absolute position */
+  top: 95%; /* adjust the top position of the button */
+  left: 95%; /* adjust the left position of the button */
+  transform: translate(-95%, -95%); /* center the button */
+  z-index: 2; /* set a higher z-index than the image */
+  background-color: #f9f4f4; /* set your desired background color */
+  color: #2b2d42; /* set your desired text color */
+  border: none; /* remove button border */
+  cursor: pointer; /* change mouse cursor on hover */
+}
 .detailnya .deskripsi p {
   color: #848484;
 }
