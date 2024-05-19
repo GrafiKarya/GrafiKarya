@@ -4,9 +4,7 @@ use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\KaryaController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [KaryaController::class,'landingpage'])->name('landingpage');
 
 Route::get('/dashboard', function () {
     return view('dashboard');
@@ -21,5 +19,7 @@ Route::middleware('auth')->group(function () {
 Route::get('/upload',[KaryaController::class,'create'])->name('upload');
 
 Route::resource('karya', KaryaController::class);
+
+Route::get('/index', [KaryaController::class,'landingpageUser'])->name('landingpageUser');
 
 require __DIR__.'/auth.php';

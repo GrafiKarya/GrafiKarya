@@ -20,6 +20,28 @@ class KaryaController extends Controller
         return view('daftarKarya', compact('karya'));
     }
 
+    public function landingpageUser()
+    {
+        //
+        $data = [
+        'karya' => $karya = Karya::all(),
+        'terbaru' =>  $terbaru = Karya::orderBy('created_at', 'DESC')->limit(4)->get(),
+        ];
+        //  dd($data['terbaru']);
+        return view('index', compact('data'));
+    }
+
+    public function landingpage()
+    {
+        //
+        $data = [
+        'karya' => $karya = Karya::all(),
+        'terbaru' =>  $terbaru = Karya::orderBy('created_at', 'DESC')->limit(4)->get(),
+        ];
+        // dd($data['terbaru']);
+        return view('dashboard', compact('data'));
+    }
+
     /**
      * Show the form for creating a new resource.
      */

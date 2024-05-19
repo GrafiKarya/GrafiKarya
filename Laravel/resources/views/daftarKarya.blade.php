@@ -17,22 +17,23 @@
 </head>
 
 <body>
-    <div class="container-fluid">
+    <div class="container-fluid overflow-hidden mb-5">
         <div class="row">
             <!-- Navbar Start -->
             <div class="nav pt-3 pb-2 px-3">
-                <div class="col-sm-7">
+                <div class="col-sm-6">
                     <img src="{{ asset('logo/GrafiKarya.png') }}" alt="GrafiKarya" style="height: 35px; width: 153px; margin-top: 7px;">
                 </div>
-                <div class="navbar col-sm-3">
+                <div class="navbar col-sm-5">
                     <ul class="column-gap-3">
                         <li><a href="">Beranda</a></li>
-                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Daftar Karya</a></li>
                         <li><a href="">Unggah Karya</a></li>
+                        <li><a href="">FAQ</a></li>
                     </ul>
                 </div>
-                <div class="login col-sm-1 ms-5">
-                    <form action="login.html" class="ms-5">
+                <div class="login col-sm-1">
+                    <form action="">
                         <input type="submit" value="Login" class="tombolLogin">
                     </form>
                 </div>
@@ -40,47 +41,51 @@
             <!-- Navbar End -->
             <!-- Main Start -->
             <div class="main pt-2">
-                <div class="judul mt-5 mb-5">
+                <div class="judul mt-4 mb-4">
                     <h1>DAFTAR KARYA</h1>
                 </div>
                 <!--  -->
-                <div class="row column-gap-3 mx-3">
+                <div class="row row-gap-4 column-gap-3 mx-4 justify-content-center">
                     @foreach ($karya as $item)
-                    <div class="card mb-3 col-md-3 border-0" style="max-width: 18rem;">
-                        <a href="{{ route('karya.show', ['karya' => $item->id]) }}">
-                            <img src="{{ asset(str_replace('public', 'storage', $item->gambar)) }}" class="card-img-top" alt="Karya">
-                            <div class="card-body">
-                                <p>{{ $item->judul }}</p>
+                    <div class="col-xs-6 col-sm-6 col-lg-4 col-xxl-3">
+                        <div class="card shadow">
+                            <div class="card-body"> 
+                                <a href="{{ route('karya.show', ['karya' => $item->id]) }}">
+                                    <img src="{{ asset(str_replace('public', 'storage', $item->gambar)) }}" class="card-img-top" alt="Karya">
+                                    <div class="card-body">
+                                        <p>{{ $item->judul }}</p>
+                                    </div>
+                                </a>
                             </div>
-                        </a>
-                    </div>    
+                        </div>
+                    </div>
                     @endforeach
-                </div>
-                <!--  -->
-            </div>
             <!-- Main End -->
-            <!-- Footer Start -->
-            <footer class="footer px-3 pt-2 pb-4">
-                <div class="row">
-                    <div class="kiri col-md-4 mt-5">
-                        <img src="{{ asset('logo/GrafiKarya.png') }}" alt="Grafikarya" style="height: 35px; width: 153px;">
-                        <p>Jl. Tanimbar 22, Kasin Kec. Klojen Kota Malang, Jawa Timur 65117</p>
-                    </div>
-                    <div class="tengah col-md-4 mt-4 ps-3">
-                        <label for="">FAQ</label>
-                        <input type="text" class="form-control" name="faq" id="faq">
-                    </div>
-                    <div class="kanan col-md-3 mt-5">
-                        <p>Hubungi Kami:</p>
-                        <a href=""><i class="fa-brands fa-facebook"></i></a>
-                        <a href=""><i class="fa-brands fa-instagram"></i></a>
-                        <a href=""><i class="fa-solid fa-envelope"></i></a>
-                        <a href=""><i class="fa-brands fa-youtube"></i></a>
-                    </div>
-            </footer>
         </div>
+        <!-- Footer Start -->
+        
         <!-- Footer End -->
     </div>
+    </div>
+    <div class="container-fluid" id="footer">
+        <footer class="px-3 pt-2 pb-4">
+            <div class="row">
+                <div class="kiri col-4 mt-5 pe-5">
+                    <img src="{{ asset('logo/GrafiKarya.png') }}" alt="Grafikarya" style="height: auto; width: 153px;">
+                    <p>Jl. Tanimbar 22, Kasin Kec. Klojen Kota Malang, Jawa Timur 65117</p>
+                </div>
+                <div class="tengah col-4 mt-4 ps-5">
+                    <label for="">FAQ</label>
+                    <input type="text" class="form-control form-control-sm w-100" name="faq" id="faq">
+                </div>
+                <div class="kanan col-4 mt-5">
+                    <p>Hubungi Kami:</p>
+                    <a href=""><i class="fa-brands fa-facebook"></i></a>
+                    <a href=""><i class="fa-brands fa-instagram"></i></a>
+                    <a href=""><i class="fa-solid fa-envelope"></i></a>
+                    <a href=""><i class="fa-brands fa-youtube"></i></a>
+                </div>
+        </footer>
     </div>
 </body>
 

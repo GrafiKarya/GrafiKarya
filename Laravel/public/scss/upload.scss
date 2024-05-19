@@ -59,14 +59,26 @@
             
             form{
                 .uploadGambar{
-                    @include text-4;
-                    text-align: center;
-                    padding-top: 10rem;
-                    border-radius: 10px;
+                    @include text-5;
                     background-color: $whiteColor3;
-                    i{
-                        font-size: 3rem;
-                        color: $blueColor;
+                    display: grid;
+                    place-content: center;
+                    text-align: center;
+                    input[type="file"]{
+                        display: none;
+                        
+                    }
+                    label{
+                        display: inline-block;
+                        text-transform: uppercase;
+                        color: $whiteColor2;
+                        background-color: $redColor1;
+                        text-align: center;
+                        user-select: none;
+                        cursor: pointer;
+                    }
+                    label:active{
+                        transform: scale(0.9);
                     }
                 }
                 .inputan{

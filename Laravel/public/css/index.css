@@ -1,0 +1,94 @@
+@import url("https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap");
+.container-fluid .row .nav {
+  background-color: #2b2d42;
+}
+.container-fluid .row .nav .navbar ul {
+  display: flex;
+  justify-content: space-around;
+}
+.container-fluid .row .nav .navbar ul li {
+  flex-direction: row;
+  list-style: none;
+}
+.container-fluid .row .nav .navbar ul li a {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  text-decoration: none;
+  color: #f9f4f4;
+}
+.container-fluid .row .nav .login form .tombolLogin {
+  font-family: "Libre Baskerville";
+  font-size: 12px;
+  margin-top: 8px;
+  width: 90px;
+  height: 28px;
+  color: #f9f4f4;
+  border: none;
+  border-radius: 5px;
+  background-color: #D90429;
+  box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+  -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+}
+
+#hero-carousel .carousel-inner .c-item {
+  height: 400px;
+}
+#hero-carousel .carousel-inner .c-item .c-img {
+  height: 100%;
+  width: 100vw;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.6);
+}
+
+.info h1 {
+  font-family: "Libre Baskerville";
+  font-size: 50px;
+  font-weight: bold;
+  color: #D90429;
+}
+.info p {
+  font-family: "Libre Baskerville";
+  font-size: 18px;
+  color: #848484;
+}
+
+#karyaBaru {
+  font-family: "Libre Baskerville";
+  font-size: 36px;
+  font-weight: bold;
+  color: #D90429;
+}
+
+.KaryaBaru .row .card a {
+  text-decoration: none;
+  text-align: center;
+}
+
+.footer {
+  background-color: #2b2d42;
+}
+.footer .row .kiri {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+}
+.footer .row .kiri p {
+  color: #f9f4f4;
+}
+.footer .row .kanan {
+  text-align: right;
+}
+.footer .row .kanan p {
+  font-family: "Libre Baskerville";
+  font-size: 14px;
+  color: #f9f4f4;
+  line-height: 1px;
+}
+.footer .row .kanan a {
+  color: #f9f4f4;
+  text-decoration: none;
+}
+.footer .row .kanan a i {
+  font-size: 1.5em;
+}/*# sourceMappingURL=index.css.map */

@@ -45,15 +45,28 @@
 }
 .container-fluid .row .unggah form .uploadGambar {
   font-family: "Libre Baskerville";
-  font-size: 14px;
-  text-align: center;
-  padding-top: 10rem;
-  border-radius: 10px;
+  font-size: 12px;
   background-color: #edf2f4;
+  display: grid;
+  place-content: center;
+  text-align: center;
 }
-.container-fluid .row .unggah form .uploadGambar i {
-  font-size: 3rem;
-  color: #2b2d42;
+.container-fluid .row .unggah form .uploadGambar input[type=file] {
+  display: none;
+}
+.container-fluid .row .unggah form .uploadGambar label {
+  display: inline-block;
+  text-transform: uppercase;
+  color: #f9f4f4;
+  background-color: #D90429;
+  text-align: center;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+  cursor: pointer;
+}
+.container-fluid .row .unggah form .uploadGambar label:active {
+  transform: scale(0.9);
 }
 .container-fluid .row .unggah form .inputan {
   font-family: "Libre Baskerville";

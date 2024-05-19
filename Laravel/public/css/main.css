@@ -54,49 +54,47 @@
   font-size: 18px;
   font-weight: bold;
 }
-.container-fluid .row .footer {
+
+#footer {
   background-color: #2b2d42;
 }
-.container-fluid .row .footer .row .kiri {
+#footer .row .kiri {
   font-family: "Libre Baskerville";
   font-size: 14px;
 }
-.container-fluid .row .footer .row .kiri p {
+#footer .row .kiri p {
   padding-left: 5px;
-  padding-right: 130px;
   color: #f9f4f4;
 }
-.container-fluid .row .footer .row .tengah {
-  align-items: center;
+#footer .row .tengah {
+  color: #f9f4f4;
   text-align: center;
-  color: #f9f4f4;
 }
-.container-fluid .row .footer .row .tengah label {
+#footer .row .tengah label {
   font-family: "Libre Baskerville";
   font-size: 18px;
   font-weight: bold;
 }
-.container-fluid .row .footer .row .tengah input {
-  margin-left: 40px;
+#footer .row .tengah input {
   margin-top: 10px;
-  width: 400px;
-  height: 40px;
+  width: -moz-max-content;
+  width: max-content;
   background-color: transparent;
   border: solid 1px #f9f4f4;
 }
-.container-fluid .row .footer .row .kanan {
+#footer .row .kanan {
   text-align: right;
 }
-.container-fluid .row .footer .row .kanan p {
+#footer .row .kanan p {
   font-family: "Libre Baskerville";
   font-size: 14px;
   color: #f9f4f4;
   line-height: 1px;
 }
-.container-fluid .row .footer .row .kanan a {
+#footer .row .kanan a {
   color: #f9f4f4;
   text-decoration: none;
 }
-.container-fluid .row .footer .row .kanan a i {
-  font-size: 1.5rem;
+#footer .row .kanan a i {
+  font-size: 1.5em;
 }/*# sourceMappingURL=main.css.map */
