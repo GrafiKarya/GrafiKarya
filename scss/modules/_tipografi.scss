@@ -1,5 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
 
+
+
+@mixin heading{
+    font-family: "Libre Baskerville";
+    font-size: 50px;
+    font-weight: bold;
+}
+@mixin headingg{
+    font-family: "Libre Baskerville";
+    font-size: 36px;
+    font-weight: bold;
+}
 @mixin heading-1{
     font-family: "Libre Baskerville";
     font-size: 30px;

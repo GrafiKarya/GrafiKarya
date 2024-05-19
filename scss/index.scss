@@ -1,0 +1,120 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid {
+    .row {
+        .nav {
+            background-color: $blueColor;
+
+            .navbar {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        flex-direction: row;
+                        list-style: none;
+
+                        a {
+                            @include text-4;
+                            text-decoration: none;
+                            color: $whiteColor2;
+                        }
+                    }
+                }
+            }
+
+            .login {
+                form {
+                    .tombolLogin {
+                        @include text-5;
+                        margin-top: 8px;
+                        width: 90px;
+                        height: 28px;
+                        color: $whiteColor2;
+                        border: none;
+                        border-radius: 5px;
+                        background-color: $redColor1;
+                        box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -webkit-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                        -moz-box-shadow: 0px 20px 20px -10px rgba(0, 0, 0, 0.26);
+                    }
+                }
+            }
+        }
+    }
+}
+
+#hero-carousel {
+    .carousel-inner {
+        .c-item {
+            height: 400px;
+
+            .c-img {
+                height: 100%;
+                width: 100vw;
+                object-fit: cover;
+                filter: brightness(0.6);
+            }
+        }
+    }
+}
+
+.info {
+    h1 {
+        @include heading;
+        color: $redColor1;
+    }
+
+    p {
+        @include text-2;
+        color: $whiteColor5;
+    }
+}
+
+#karyaBaru {
+    @include headingg;
+    color: $redColor1;
+}
+
+.KaryaBaru {
+    .row {
+        .card {
+            a {
+                text-decoration: none;
+                text-align: center;
+            }
+        }
+    }
+}
+
+.footer {
+    background-color: $blueColor;
+    .row {
+        .kiri {
+            @include text-4;
+
+            p {
+                color: $whiteColor2;
+            }
+        }
+        .kanan{
+            text-align: right;
+
+            p {
+                @include text-4;
+                color: $whiteColor2;
+                line-height: 1px;
+            }
+
+            a {
+                color: $whiteColor2;
+                text-decoration: none;
+
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}
