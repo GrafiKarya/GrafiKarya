@@ -1,0 +1,118 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid {
+    .row {
+        .nav {
+            background-color: $blueColor;
+
+            .navbar {
+                ul {
+                    display: flex;
+                    justify-content: space-around;
+
+                    li {
+                        flex-direction: row;
+                        list-style: none;
+
+                        a {
+                            @include text-4;
+                            text-decoration: none;
+                            color: $whiteColor2;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.tombol{
+    button{
+        background-color: $redColor1;
+        height: 3rem;
+        width: 3rem;
+        i{
+            color: $whiteColor2;
+            font-size: 2rem;
+        }
+    }    
+}
+
+.detailnya{
+    background-color: $whiteColor3;
+    .deskripsi{
+        p{
+            color: $whiteColor5;
+        }
+    }
+}
+
+#karyaLainnya {
+    @include headingg;
+    color: $redColor1;
+    text-align: center;
+}
+
+.karyaLainnya {
+    .row {
+        .card {
+            a {
+                text-decoration: none;
+                text-align: center;
+                p {
+                    color: $darkColor2;
+                    @include heading-2;
+                }
+            }
+        }
+    }
+}
+
+#footer {
+    background-color: $blueColor;
+
+    .row {
+        .kiri {
+            @include text-4;
+
+            p {
+                padding-left: 5px;
+                color: $whiteColor2;
+            }
+        }
+
+        .tengah{
+            color: $whiteColor2;
+            text-align: center;
+            label{
+                @include heading-2;
+            }
+            input{
+                margin-top: 10px;
+                width: max-content;
+                background-color: transparent;
+                border: solid 1px $whiteColor2;
+            }
+        }
+
+        .kanan{
+            text-align: right;
+
+            p {
+                @include text-4;
+                color: $whiteColor2;
+                line-height: 1px;
+            }
+
+            a {
+                color: $whiteColor2;
+                text-decoration: none;
+
+                i {
+                    font-size: 1.5em;
+                }
+            }
+        }
+    }
+}

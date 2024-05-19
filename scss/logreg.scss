@@ -1,0 +1,35 @@
+@import "modules/warna";
+@import "modules/tipografi";
+
+.container-fluid{
+    @include bgGradient;
+    height: 100vh;
+    .row{
+        .formnya{
+            background-color: $whiteColor6;
+            img{
+                height: auto;
+                width: 4rem;
+            }
+            h3{
+                @include heading-3;
+                color: $blueColor
+            }
+            form{
+                button{
+                    @include text-2;
+                    color: $whiteColor2;
+                    background-color: $redColor1;
+                    width: 100%;
+                }
+            }
+            p{
+                @include text-5;
+                color: $blueColor;
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}
