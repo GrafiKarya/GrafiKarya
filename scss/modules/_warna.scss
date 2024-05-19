@@ -11,3 +11,9 @@ $whiteColor2:#f9f4f4;
 $whiteColor3:#edf2f4;
 $whiteColor4:#8d99ae;
 $whiteColor5:#848484;
+$whiteColor6:#d9d9d9;
+
+@mixin bgGradient{
+    background: rgb(39, 40, 57);
+    background: linear-gradient(180deg, rgba(39, 40, 57, 1) 0%, rgba(183, 183, 184, 1) 100%);
+}
