@@ -11,6 +11,8 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
 use Illuminate\View\View;
+use App\Models\Karya;
+
 
 class RegisteredUserController extends Controller
 {
@@ -45,6 +47,11 @@ class RegisteredUserController extends Controller
 
         Auth::login($user);
 
-        return redirect(route('dashboard', absolute: false));
+        // dd( Karya::orderBy('created_at', 'DESC')->limit(4)->get());
+
+        return redirect()->intended(route('dashboard', absolute: false))->with([
+            'karya' => Karya::all(),
+            'terbaru' => Karya::orderBy('created_at', 'DESC')->limit(4)->get(),
+        ]);
     }
 }

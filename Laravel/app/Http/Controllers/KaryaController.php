@@ -39,7 +39,7 @@ class KaryaController extends Controller
         'terbaru' =>  $terbaru = Karya::orderBy('created_at', 'DESC')->limit(4)->get(),
         ];
         // dd($data['terbaru']);
-        return view('dashboard', compact('data'));
+        return view('dashboard1', compact('data'));
     }
 
     /**
@@ -76,7 +76,8 @@ class KaryaController extends Controller
     public function show(Karya $karya)
     {
         //
-        return view('show', compact('karya'));
+        $lainnya = Karya::all();
+        return view('detailKarya', compact('karya', 'lainnya'));
     }
 
     /**

@@ -81,7 +81,7 @@
                         <x-input-label for="name" :value="__('Name')" />
                         <x-text-input id="name" class="form-control border-1 border-black" 
                                       type="text" name="name" :value="old('name')" required autofocus autocomplete="name" 
-                                      placeholder="&#xf023; Masukkan kata sandi" style="font-family:Arial, FontAwesome" />
+                                      placeholder="Masukkan Nama" style="font-family:Arial, FontAwesome" />
                         <x-input-error :messages="$errors->get('name')" class="mt-2" />
                     </div>
 
